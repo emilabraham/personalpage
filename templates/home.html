@@ -3,8 +3,12 @@
 <html>
 
 <head>
+  <style type="text/css">
+    html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+  </style>
   <title>{% block title %}emilabraham.com{% endblock %}</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9_0LtWTOIlnkl7tzM2L5HJPQUxXrrysQ"></script>
   <script>
   /*var xhr = new XMLHttpRequest();
   var apikey = "CB675B9A-C58E-4893-ADDE-3AD57730268C";
@@ -44,14 +48,25 @@
       timezone = outputArray[22];
       area = outputArray[23];
       state = outputArray[24];
-      latitude = outputArray[25];
-      longitude = outputArray[26];
+      latitude = parseFloat(outputArray[25].substring(1,outputArray[25].length-1));
+      longitude = parseFloat(outputArray[26].substring(1,outputArray[26].length-1));
       dataType = outputArray[27];
       airQualityIndex = outputArray[28];
       level = outputArray[30];
+      initialize();
       //print_variables();
     });
    }
+
+   function initialize() {
+     var mapOptions = {
+       center: { lat: latitude, lng: longitude},
+       zoom: 8
+     };
+     var map = new google.maps.Map(document.getElementById('map-canvas'),
+       mapOptions);
+   } 
+   //google.maps.event.addDomListener(window, 'load', initialize);
 
    //Function that prints initialized variables.
    function print_variables(){
@@ -99,10 +114,12 @@
     <button onclick="get_zipcode_data()">Submit</button>
   </div>
 
+
   <!--The output of the API call -->
   <div class="output">
   </div>
-
+  <div id="map-canvas">
+  </div>
 
 </body>
 </html>
