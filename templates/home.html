@@ -14,10 +14,58 @@
   console.log(xmlDocument.childNodes['0'].textContent);
   console.log(xhr.status);
   console.log(xhr.statusText);*/
+
+  //Default zipcode.
   var zip = "12345";
-  $.getJSON('http://anyorigin.com/dev/get?url=http%3A//www.airnowapi.org/aq/forecast/zipCode/%3Fformat%3Dtext/csv%26zipCode%3D12309%26date%3D2014-12-08%26distance%3D25%26API_KEY%3DCB675B9A-C58E-4893-ADDE-3AD57730268C&callback=?', function(data){
+  var outputArray;
+  var dateObserved;
+  var timeObserved;
+  var timezone;
+  var area;
+  var state;
+  var latitude;
+  var longitude;
+  var dataType;
+  var airQualityIndex;
+  var level;
+
+  //Function that makes the API call to AirNow.
+  function get_zipcode_data(){
+    zip = document.getElementById("userInput").value;
+    $.getJSON('http://anyorigin.com/dev/get?url=http%3A//www.airnowapi.org/aq/observation/zipCode/current/%3Fformat%3Dtext/csv%26zipCode%3D'+zip+'%26distance%3D25%26API_KEY%3DCB675B9A-C58E-4893-ADDE-3AD57730268C&callback=?', function(data){
       $("div.output").html(data.contents);
+      outputArray = data.contents.split(",");
+      //Special case where a , is lacking
+      secondArray = outputArray[10].split(" ");
+      thirdArray = outputArray[20].split("\"");
+      
+      dateObserved = thirdArray[3];
+      timeObserved = outputArray[21];
+      timezone = outputArray[22];
+      area = outputArray[23];
+      state = outputArray[24];
+      latitude = outputArray[25];
+      longitude = outputArray[26];
+      dataType = outputArray[27];
+      airQualityIndex = outputArray[28];
+      level = outputArray[30];
+      //print_variables();
     });
+   }
+
+   //Function that prints initialized variables.
+   function print_variables(){
+     console.log("dateObserved: " + window.dateObserved);
+     console.log("timeObserved: " + window.timeObserved);
+     console.log("timezone: " + window.timezone);
+     console.log("area: " + window.area);
+     console.log("state: " + window.state);
+     console.log("latitude: " + window.latitude);
+     console.log("longitude: " + window.longitude);
+     console.log("dataType: " + window.dataType);
+     console.log("airQualityIndex: " + window.airQualityIndex);
+     console.log("level: " + window.level);
+   }
   </script>
 </head>
 
@@ -44,8 +92,17 @@
     <p>But here is my <a href="/booklist/">book list</a> if you are interested.</p>
   {% endblock %}
   </div>
+
+  <!--The zipcode submission form.-->
+  <div>
+    Enter your Zipcode:<input type="text" id="userInput"></input>
+    <button onclick="get_zipcode_data()">Submit</button>
+  </div>
+
+  <!--The output of the API call -->
   <div class="output">
   </div>
-  
+
+
 </body>
 </html>
