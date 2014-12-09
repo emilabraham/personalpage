@@ -2977,3 +2977,4 @@
 [Mon Dec 08 02:01:13 2014] [error] [client 2601:6:7600:bd2:864:c0a4:9c05:159b] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Mon Dec 08 09:37:19 2014] [error] [client 153.121.47.195] Invalid URI in request GET HTTP/1.1 HTTP/1.1
 [Mon Dec 08 12:56:12 2014] [error] [client 76.179.162.232] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Tue Dec 09 08:11:08 2014] [error] [client 2601:6:7600:bd2:e12a:917a:76ad:2ab3] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico

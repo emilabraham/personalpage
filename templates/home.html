@@ -10,15 +10,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9_0LtWTOIlnkl7tzM2L5HJPQUxXrrysQ"></script>
   <script>
-  /*var xhr = new XMLHttpRequest();
-  var apikey = "CB675B9A-C58E-4893-ADDE-3AD57730268C";
-  xhr.open("GET", "http://www.airnowapi.org/aq/forecast/zipCode/?format=application/xml&zipCode=12309&date=2014-12-07&distance=25&API_KEY=CB675B9A-C58E-4893-ADDE-3AD57730268C", false);
-  xhr.send();
-  xmlDocument = xhr.responseXML;
-  console.log(xmlDocument.childNodes['0'].textContent);
-  console.log(xhr.status);
-  console.log(xhr.statusText);*/
-
   //Default zipcode.
   var zip = "12345";
   var outputArray;
@@ -32,6 +23,7 @@
   var dataType;
   var airQualityIndex;
   var level;
+  var markerPin;
 
   //Function that makes the API call to AirNow.
   function get_zipcode_data(){
@@ -44,43 +36,76 @@
       thirdArray = outputArray[20].split("\"");
       
       dateObserved = thirdArray[3];
-      timeObserved = outputArray[21];
-      timezone = outputArray[22];
-      area = outputArray[23];
-      state = outputArray[24];
+      timeObserved = outputArray[21].substring(1,outputArray[21].length-1);
+      timezone = outputArray[22].substring(1,outputArray[22].length-1);
+      area = outputArray[23].substring(1,outputArray[23].length-1);
+      state = outputArray[24].substring(1,outputArray[24].length-1);
       latitude = parseFloat(outputArray[25].substring(1,outputArray[25].length-1));
       longitude = parseFloat(outputArray[26].substring(1,outputArray[26].length-1));
-      dataType = outputArray[27];
-      airQualityIndex = outputArray[28];
-      level = outputArray[30];
+      dataType = outputArray[27].substring(1,outputArray[27].length-1);
+      airQualityIndex = outputArray[28].substring(1,outputArray[28].length-1);
+      level = outputArray[30].substring(1,outputArray[30].length-2);
+      setMarkerPin();
       initialize();
-      //print_variables();
     });
    }
 
-   function initialize() {
-     var mapOptions = {
-       center: { lat: latitude, lng: longitude},
-       zoom: 8
-     };
-     var map = new google.maps.Map(document.getElementById('map-canvas'),
-       mapOptions);
-   } 
-   //google.maps.event.addDomListener(window, 'load', initialize);
-
-   //Function that prints initialized variables.
-   function print_variables(){
-     console.log("dateObserved: " + window.dateObserved);
-     console.log("timeObserved: " + window.timeObserved);
-     console.log("timezone: " + window.timezone);
-     console.log("area: " + window.area);
-     console.log("state: " + window.state);
-     console.log("latitude: " + window.latitude);
-     console.log("longitude: " + window.longitude);
-     console.log("dataType: " + window.dataType);
-     console.log("airQualityIndex: " + window.airQualityIndex);
-     console.log("level: " + window.level);
+   function setMarkerPin() {
+     if(level == "Good"){
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/00FF00/");
+     }
+     else if(level == "Moderate") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FFFF00/");
+     }
+     else if(level == "Unhealthy for Sensitive Groups") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF7F00/");
+     }
+     else if(level == "Unhealthy") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF0000/");
+     }
+     else if(level = "Very Unhealthy") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/A020F0/");
+     }
+     else {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/B03060/");
+     }
    }
+
+   //function to initialize the map using Google's API.
+   function initialize() {
+     var myLatlng = new google.maps.LatLng(latitude,longitude);
+     var mapOptions = {
+       zoom: 10,
+       center: myLatlng
+     }
+     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+     // To add the marker to the map, use the 'map' property
+     var marker = new google.maps.Marker({
+       position: myLatlng,
+       icon: markerPin,
+       map: map,
+       title: area + "," + state
+     });
+     var loc = area + ',' + state;
+     var datetime = 'on ' + dateObserved + 'at ' + timeObserved + ':00' + timezone;
+     var contentString = '<div id="content">'+
+       '<h1 id="firstHeading" class="firstHeading">'+ loc +'</h1>'+
+       '<div id="bodyContent">'+
+         '<p>Date/Time of Measurement: '+ datetime + '</p>'+
+         '<p>Type of Reading: ' + dataType + '</p>'+
+         '<p>Air Quality Index: ' + airQualityIndex + '</p>' +
+         '<p>Quality: ' + level + '</p>' +
+       '</div>';
+
+     var infowindow = new google.maps.InfoWindow({
+       content: contentString
+     });
+
+     google.maps.event.addListener(marker, 'click', function() {
+       infowindow.open(map,marker);
+     });
+   }  
   </script>
 </head>
 
@@ -98,15 +123,21 @@
 
   <div class="centertext">
   {% block content %}
-    <p>Welcome to emilabraham.com! This is a terrible website.
+<!--    <p>Welcome to emilabraham.com! This is a terrible website.
     Don't click on any of the links. They will bore you. Nothing even remotely
     creative went into the making of this website. You can never expect anything 
     awesome in the future either. This website is bad and it will still be bad 
     if you visit tomorrow or the day after. There are no <a id="secret" href="http://easteregg.emilabraham.com">secrets</a> on this page.</p>
 
-    <p>But here is my <a href="/booklist/">book list</a> if you are interested.</p>
+    <p>But here is my <a href="/booklist/">book list</a> if you are interested.</p>-->
   {% endblock %}
   </div>
+
+  <p>Welcome to the AQI monitor! Use this web application to track the concentration of PM2.5 particles in the atmosphere of you local neighborhood or around the US.</p>
+
+  <p>Just type in the zipcode of the location of where you would like to see current readings and view the map.</p>
+  <p>The color of the marker represents the health and quality of the air.</p>
+  <img src="../media/aqikey.png">
 
   <!--The zipcode submission form.-->
   <div>
