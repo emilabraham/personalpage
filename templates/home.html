@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<html>
+
+<head>
+  <title>{% block title %}emilabraham.com{% endblock %}</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+  /*var xhr = new XMLHttpRequest();
+  var apikey = "CB675B9A-C58E-4893-ADDE-3AD57730268C";
+  xhr.open("GET", "http://www.airnowapi.org/aq/forecast/zipCode/?format=application/xml&zipCode=12309&date=2014-12-07&distance=25&API_KEY=CB675B9A-C58E-4893-ADDE-3AD57730268C", false);
+  xhr.send();
+  xmlDocument = xhr.responseXML;
+  console.log(xmlDocument.childNodes['0'].textContent);
+  console.log(xhr.status);
+  console.log(xhr.statusText);*/
+  var zip = "12345";
+  $.getJSON('http://anyorigin.com/dev/get?url=http%3A//www.airnowapi.org/aq/forecast/zipCode/%3Fformat%3Dtext/csv%26zipCode%3D12309%26date%3D2014-12-08%26distance%3D25%26API_KEY%3DCB675B9A-C58E-4893-ADDE-3AD57730268C&callback=?', function(data){
+      $("div.output").html(data.contents);
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="navigation">
+  {% block navigation %}
+  <ul>
+    <li class="home"><a href="/">Home</a></li>
+    <li class="blog"><a href="/blog/">Blog</a></li> 
+    <!-- <li class="gallery"><a href="/gallery/">Gallery</a></li> -->
+  <ul>
+  {% endblock %}
+  </div>
+
+  <div class="centertext">
+  {% block content %}
+    <p>Welcome to emilabraham.com! This is a terrible website.
+    Don't click on any of the links. They will bore you. Nothing even remotely
+    creative went into the making of this website. You can never expect anything 
+    awesome in the future either. This website is bad and it will still be bad 
+    if you visit tomorrow or the day after. There are no <a id="secret" href="http://easteregg.emilabraham.com">secrets</a> on this page.</p>
+
+    <p>But here is my <a href="/booklist/">book list</a> if you are interested.</p>
+  {% endblock %}
+  </div>
+  <div class="output">
+  </div>
+  
+</body>
+</html>

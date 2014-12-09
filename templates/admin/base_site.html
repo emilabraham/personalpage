@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+<head>
+  <!--  <script type="text/javascript" src="~/public/emilabraham.com/personalpage/media/js/tiny_mce/tiny_mce.js"></script>-->
+  <script src="http://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
+</head>
+
+{% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">{% trans 'Django administration' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
