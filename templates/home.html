@@ -133,11 +133,17 @@
   {% endblock %}
   </div>
 
-  <p>Welcome to the AQI monitor! Use this web application to track the concentration of PM2.5 particles in the atmosphere of you local neighborhood or around the US.</p>
+  <p>Welcome to the AQI monitor! Use this web application to track the concentration of PM2.5 particles and other gases in the atmosphere of your local neighborhood or around the US.</p>
+
+  <p><a href="https://www.health.ny.gov/environmental/indoors/air/pmq_a.htm">What are PM2.5 particles?</a></p> 
 
   <p>Just type in the zipcode of the location of where you would like to see current readings and view the map.</p>
-  <p>The color of the marker represents the health and quality of the air.</p>
+  <p>The color of the marker on the map represents the health and quality of the air.</p>
   <img src="../media/aqikey.png">
+
+  <p>This is a publicly available application! Simply copy and paste <a href="https://gist.github.com/emilabraham/739facc131c46bfcbfb3">the code</a> onto your website in order to share this information.</p>
+
+  <p>If you feel at all worried about the quality of your air, or the concentration of PM2.5 Particles in your atmosphere, don't hesitate to <a href="http://www.4cleanair.org/agencies">reach out</a>! Every voice helps.</p>
 
   <!--The zipcode submission form.-->
   <div>
@@ -147,8 +153,6 @@
 
 
   <!--The output of the API call -->
-  <div class="output">
-  </div>
   <div id="map-canvas">
   </div>
 
