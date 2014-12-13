@@ -2985,3 +2985,8 @@
 [Tue Dec 09 14:35:16 2014] [error] [client 155.33.148.200] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Wed Dec 10 07:04:40 2014] [error] [client 94.236.164.61] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
 [Wed Dec 10 15:48:27 2014] [error] [client 202.144.144.163] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sat Dec 13 21:24:03 2014] [error] [client 2601:6:7600:bd2:8406:bf48:9901:afa9] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sat Dec 13 21:24:03 2014] [error] [client 2601:6:7600:bd2:8406:bf48:9901:afa9] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sat Dec 13 21:24:03 2014] [error] [client 2601:6:7600:bd2:8406:bf48:9901:afa9] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sat Dec 13 23:12:42 2014] [error] [client 202.46.56.46] mod_wsgi (pid=25877): Exception occurred processing WSGI script '/home/honestemu/public/emilabraham.com/personalpage/personalpage/django.wsgi'.
+[Sat Dec 13 23:12:42 2014] [error] [client 202.46.56.46] IOError: failed to write data

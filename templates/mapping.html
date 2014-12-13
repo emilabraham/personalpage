@@ -1,0 +1,137 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<html>
+
+<head>
+  <style type="text/css">
+    html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+  </style>
+  <title>{% block title %}emilabraham.com: AQI Mapping{% endblock %}</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9_0LtWTOIlnkl7tzM2L5HJPQUxXrrysQ"></script>
+  <script>
+  //Default zipcode.
+  var zip = "12345";
+  var outputArray;
+  var dateObserved;
+  var timeObserved;
+  var timezone;
+  var area;
+  var state;
+  var latitude;
+  var longitude;
+  var dataType;
+  var airQualityIndex;
+  var level;
+  var markerPin;
+
+  //Function that makes the API call to AirNow.
+  function get_zipcode_data(){
+    zip = document.getElementById("userInput").value;
+    $.getJSON('http://anyorigin.com/dev/get?url=http%3A//www.airnowapi.org/aq/observation/zipCode/current/%3Fformat%3Dtext/csv%26zipCode%3D'+zip+'%26distance%3D25%26API_KEY%3DCB675B9A-C58E-4893-ADDE-3AD57730268C&callback=?', function(data){
+      $("div.output").html(data.contents);
+      outputArray = data.contents.split(",");
+      //Special case where a , is lacking
+      secondArray = outputArray[10].split(" ");
+      thirdArray = outputArray[20].split("\"");
+      
+      dateObserved = thirdArray[3];
+      timeObserved = outputArray[21].substring(1,outputArray[21].length-1);
+      timezone = outputArray[22].substring(1,outputArray[22].length-1);
+      area = outputArray[23].substring(1,outputArray[23].length-1);
+      state = outputArray[24].substring(1,outputArray[24].length-1);
+      latitude = parseFloat(outputArray[25].substring(1,outputArray[25].length-1));
+      longitude = parseFloat(outputArray[26].substring(1,outputArray[26].length-1));
+      dataType = outputArray[27].substring(1,outputArray[27].length-1);
+      airQualityIndex = outputArray[28].substring(1,outputArray[28].length-1);
+      level = outputArray[30].substring(1,outputArray[30].length-2);
+      setMarkerPin();
+      initialize();
+    });
+   }
+
+   function setMarkerPin() {
+     if(level == "Good"){
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/00FF00/");
+     }
+     else if(level == "Moderate") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FFFF00/");
+     }
+     else if(level == "Unhealthy for Sensitive Groups") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF7F00/");
+     }
+     else if(level == "Unhealthy") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/FF0000/");
+     }
+     else if(level = "Very Unhealthy") {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/A020F0/");
+     }
+     else {
+       markerPin = new google.maps.MarkerImage("http://www.googlemapsmarkers.com/v1/B03060/");
+     }
+   }
+
+   //function to initialize the map using Google's API.
+   function initialize() {
+     var myLatlng = new google.maps.LatLng(latitude,longitude);
+     var mapOptions = {
+       zoom: 10,
+       center: myLatlng
+     }
+     var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+     // To add the marker to the map, use the 'map' property
+     var marker = new google.maps.Marker({
+       position: myLatlng,
+       icon: markerPin,
+       map: map,
+       title: area + "," + state
+     });
+     var loc = area + ',' + state;
+     var datetime = 'on ' + dateObserved + 'at ' + timeObserved + ':00' + timezone;
+     var contentString = '<div id="content">'+
+       '<h1 id="firstHeading" class="firstHeading">'+ loc +'</h1>'+
+       '<div id="bodyContent">'+
+         '<p>Date/Time of Measurement: '+ datetime + '</p>'+
+         '<p>Type of Reading: ' + dataType + '</p>'+
+         '<p>Air Quality Index: ' + airQualityIndex + '</p>' +
+         '<p>Quality: ' + level + '</p>' +
+       '</div>';
+
+     var infowindow = new google.maps.InfoWindow({
+       content: contentString
+     });
+
+     google.maps.event.addListener(marker, 'click', function() {
+       infowindow.open(map,marker);
+     });
+   }  
+  </script>
+</head>
+
+<body>
+  <p>Welcome to the AQI monitor! Use this web application to track the concentration of PM2.5 particles and other gases in the atmosphere of your local neighborhood or around the US.</p>
+
+  <p><a href="https://www.health.ny.gov/environmental/indoors/air/pmq_a.htm">What are PM2.5 particles?</a></p> 
+
+  <p>Just type in the zipcode of the location of where you would like to see current readings and view the map.</p>
+  <p>The color of the marker on the map represents the health and quality of the air.</p>
+  <img src="../media/aqikey.png">
+
+  <p>This is a publicly available application! Simply copy and paste <a href="https://gist.github.com/emilabraham/739facc131c46bfcbfb3">the code</a> onto your website in order to share this information.</p>
+
+  <p>If you feel at all worried about the quality of your air, or the concentration of PM2.5 Particles in your atmosphere, don't hesitate to <a href="http://www.4cleanair.org/agencies">reach out</a>! Every voice helps.</p>
+
+  <!--The zipcode submission form.-->
+  <div>
+    Enter your Zipcode:<input type="text" id="userInput"></input>
+    <button onclick="get_zipcode_data()">Submit</button>
+  </div>
+
+
+  <!--The output of the API call -->
+  <div id="map-canvas">
+  </div>
+
+</body>
+</html>
