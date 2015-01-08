@@ -1,13 +1,13 @@
 {% extends "home.html" %}
 
-{% block title %} AmericanKna{% endblock %}
+{% block title %}Blog{% endblock %}
 
 {% block content %}
 {% if all_posts %}
   <div id="bloglinks">
   <ul>
   {% for post in all_posts %}
-  <li><a href="{% url 'blog.views.detail' post.slug %}">{{ post.title }}</a>
+  <li><a href="{% url 'blog:detail' post.slug %}">{{ post.title }}</a>
   <p id="postinfo">Posted {{ post.pub_date|timesince }} ago</p>
   </li>
   {% endfor %}
