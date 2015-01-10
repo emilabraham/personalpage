@@ -8,6 +8,11 @@ class PostAdmin(admin.ModelAdmin):
   formfield_overrides = {models.TextField: {'widget': forms.Textarea(attrs={'class':'ckeditor'})}, }
 
   class Media:
-    js = {'ckeditor/ckeditor.js'}
+    css = {
+        "all": ("snippet.css",)
+    }
+    js = {
+        'ckeditor/ckeditor.js'
+    }
 
 admin.site.register(Post, PostAdmin)
