@@ -42,7 +42,6 @@ INSTALLED_APPS = (
     'booklist',
     'blog',
     'suit_ckeditor',
-    'tinymce',
 )
 
 MIDDLEWARE_CLASSES = (

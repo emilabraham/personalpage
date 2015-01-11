@@ -17,5 +17,5 @@ urlpatterns = patterns('',
     url(r'^booklist/', include('booklist.urls', namespace='booklist')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^aqimapping/', TemplateView.as_view(template_name="mapping.html")),
-    (r'^tinymce/', include('tinymce.urls')),
+    url(r'^about/', TemplateView.as_view(template_name="about.html")),
 )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
