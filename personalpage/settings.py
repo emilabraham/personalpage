@@ -20,11 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '82^e^5!z@su$3gtretamx$*5aet3q)6g=1x5y^9sz@a-@8&d0+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '.emilabraham.com',
+    '.emilabraham.com.',
+    ]
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
@@ -42,7 +45,7 @@ INSTALLED_APPS = (
     'booklist',
     'blog',
     'suit_ckeditor',
-)
+    )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -51,7 +54,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
+    )
 
 ROOT_URLCONF = 'personalpage.urls'
 
@@ -63,13 +66,13 @@ WSGI_APPLICATION = 'personalpage.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'personalpage',
-        'USER': 'postgres',
-        'PASSWORD': 'emil123',
-        'HOST': 'localhost'
+      'ENGINE': 'django.db.backends.postgresql_psycopg2',
+      'NAME': 'personalpage',
+      'USER': 'postgres',
+      'PASSWORD': 'emil123',
+      'HOST': 'localhost'
+      }
     }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -88,8 +91,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "public_html/static")
-)
+    os.path.join(BASE_DIR, "public_html/static"),
+    )
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "public_html/static")

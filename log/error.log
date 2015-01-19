@@ -3042,3 +3042,16 @@
 [Fri Jan 16 03:22:53 2015] [error] [client 2601:6:7600:bd2:c869:41c1:1bff:dc63] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Thu Jan 15 22:22:53 2015] [error] [client 2601:6:7600:bd2:c869:41c1:1bff:dc63] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Fri Jan 16 03:22:53 2015] [error] [client 2601:6:7600:bd2:c869:41c1:1bff:dc63] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Jan 16 22:24:50 2015] [error] [client 66.249.83.160] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 04:02:38 2015] [error] [client 66.249.83.160] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 13:11:31 2015] [error] [client 2601:6:7600:bd2:b523:35df:4540:8043] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 13:26:19 2015] [error] [client 66.249.83.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 17:30:21 2015] [error] [client 194.146.225.214] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sun Jan 18 17:30:55 2015] [error] [client 194.146.225.214] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sun Jan 18 17:32:19 2015] [error] [client 194.146.225.214] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sun Jan 18 17:33:51 2015] [error] [client 194.146.225.214] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sun Jan 18 17:54:47 2015] [error] [client 2601:6:7600:bd2:5115:dd1f:4b33:1a11] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 18:13:57 2015] [error] [client 179.43.133.34] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /w00tw00t.at.ISC.SANS.DFind:)
+[Sun Jan 18 19:13:33 2015] [error] [client 66.249.83.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 19:21:34 2015] [error] [client 2601:6:7600:bd2:5115:dd1f:4b33:1a11] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Jan 18 19:23:12 2015] [error] [client 2601:6:7600:bd2:5115:dd1f:4b33:1a11] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/blog
