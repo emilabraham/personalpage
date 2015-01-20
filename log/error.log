@@ -3055,3 +3055,10 @@
 [Sun Jan 18 19:13:33 2015] [error] [client 66.249.83.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Sun Jan 18 19:21:34 2015] [error] [client 2601:6:7600:bd2:5115:dd1f:4b33:1a11] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Sun Jan 18 19:23:12 2015] [error] [client 2601:6:7600:bd2:5115:dd1f:4b33:1a11] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/blog
+[Mon Jan 19 09:33:09 2015] [error] [client 37.99.208.202] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Mon Jan 19 14:30:01 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Mon Jan 19 17:25:02 2015] [error] [client 98.160.100.148] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Mon Jan 19 17:58:00 2015] [error] [client 2601:6:7600:bd2:3054:b5d1:1997:13ba] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Mon Jan 19 19:07:26 2015] [error] [client 66.249.83.172] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Mon Jan 19 20:30:22 2015] [error] [client 178.162.203.167] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /w00tw00t.at.ISC.SANS.DFind:)
+[Mon Jan 19 20:49:48 2015] [error] [client 66.249.83.160] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico

@@ -29,6 +29,8 @@ ALLOWED_HOSTS = [
     '.emilabraham.com.',
     ]
 
+
+
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 
