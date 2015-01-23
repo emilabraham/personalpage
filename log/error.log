@@ -3090,3 +3090,124 @@
 [Thu Jan 22 16:23:16 2015] [error] [client 41.203.214.18] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
 [Thu Jan 22 17:28:16 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Thu Jan 22 19:43:54 2015] [error] [client 2601:6:7600:bd2:497f:523c:14f1:a58e] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Thu Jan 22 21:19:27 2015] [error] [client 66.249.83.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] mod_wsgi (pid=19523): Exception occurred processing WSGI script '/home/honestemu/public/emilabraham.com/personalpage/personalpage/django.wsgi'.
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] Traceback (most recent call last):
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/wsgi.py", line 206, in __call__
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.get_response(request)
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 194, in get_response
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 232, in handle_uncaught_exception
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     if resolver.urlconf_module is None:
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/urlresolvers.py", line 360, in urlconf_module
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     self._urlconf_module = import_module(self.urlconf_name)
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/personalpage/urls.py", line 21, in <module>
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/conf/urls/__init__.py", line 26, in include
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     urlconf_module = import_module(urlconf_module)
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/urls.py", line 2, in <module>
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     from blog import views
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/views.py", line 6
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     all_posts =
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]               ^
+[Thu Jan 22 21:29:05 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] SyntaxError: invalid syntax
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] mod_wsgi (pid=19524): Exception occurred processing WSGI script '/home/honestemu/public/emilabraham.com/personalpage/personalpage/django.wsgi'.
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] Traceback (most recent call last):
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/wsgi.py", line 206, in __call__
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.get_response(request)
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 194, in get_response
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 232, in handle_uncaught_exception
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     if resolver.urlconf_module is None:
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/urlresolvers.py", line 360, in urlconf_module
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     self._urlconf_module = import_module(self.urlconf_name)
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/personalpage/urls.py", line 21, in <module>
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/conf/urls/__init__.py", line 26, in include
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     urlconf_module = import_module(urlconf_module)
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/urls.py", line 2, in <module>
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     from blog import views
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/views.py", line 6
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     all_posts =
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]               ^
+[Thu Jan 22 21:29:06 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] SyntaxError: invalid syntax
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] mod_wsgi (pid=19539): Exception occurred processing WSGI script '/home/honestemu/public/emilabraham.com/personalpage/personalpage/django.wsgi'.
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] Traceback (most recent call last):
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/wsgi.py", line 206, in __call__
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.get_response(request)
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 194, in get_response
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 232, in handle_uncaught_exception
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     if resolver.urlconf_module is None:
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/urlresolvers.py", line 360, in urlconf_module
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     self._urlconf_module = import_module(self.urlconf_name)
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/personalpage/urls.py", line 21, in <module>
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/conf/urls/__init__.py", line 26, in include
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     urlconf_module = import_module(urlconf_module)
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/urls.py", line 2, in <module>
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     from blog import views
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/views.py", line 6
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     all_posts =
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]               ^
+[Thu Jan 22 21:29:12 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] SyntaxError: invalid syntax
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] mod_wsgi (pid=19540): Exception occurred processing WSGI script '/home/honestemu/public/emilabraham.com/personalpage/personalpage/django.wsgi'.
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] Traceback (most recent call last):
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/wsgi.py", line 206, in __call__
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.get_response(request)
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 194, in get_response
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 232, in handle_uncaught_exception
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     if resolver.urlconf_module is None:
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/urlresolvers.py", line 360, in urlconf_module
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     self._urlconf_module = import_module(self.urlconf_name)
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/personalpage/urls.py", line 21, in <module>
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/conf/urls/__init__.py", line 26, in include
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     urlconf_module = import_module(urlconf_module)
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/urls.py", line 2, in <module>
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     from blog import views
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/views.py", line 6
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     all_posts =
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]               ^
+[Thu Jan 22 21:29:13 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] SyntaxError: invalid syntax
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] mod_wsgi (pid=19597): Exception occurred processing WSGI script '/home/honestemu/public/emilabraham.com/personalpage/personalpage/django.wsgi'.
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] Traceback (most recent call last):
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/wsgi.py", line 206, in __call__
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.get_response(request)
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 194, in get_response
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/handlers/base.py", line 232, in handle_uncaught_exception
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     if resolver.urlconf_module is None:
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/core/urlresolvers.py", line 360, in urlconf_module
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     self._urlconf_module = import_module(self.urlconf_name)
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/personalpage/urls.py", line 21, in <module>
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/conf/urls/__init__.py", line 26, in include
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     urlconf_module = import_module(urlconf_module)
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/usr/local/lib/python2.7/dist-packages/Django-1.6.5-py2.7.egg/django/utils/importlib.py", line 40, in import_module
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     __import__(name)
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/urls.py", line 2, in <module>
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     from blog import views
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]   File "/home/honestemu/public/emilabraham.com/personalpage/blog/views.py", line 6
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]     all_posts =
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057]               ^
+[Thu Jan 22 21:29:29 2015] [error] [client 2601:6:7600:bd2:5036:6336:296c:5057] SyntaxError: invalid syntax
