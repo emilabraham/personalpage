@@ -18,4 +18,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^aqimapping/', TemplateView.as_view(template_name="mapping.html")),
     url(r'^about/', TemplateView.as_view(template_name="about.html")),
+    url(r'^google9ac1f1994e374c06.html',
+      TemplateView.as_view(template_name='google9ac1f1994e374c06.html')),
 )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()
