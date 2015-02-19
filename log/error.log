@@ -3278,3 +3278,28 @@
 [Fri Feb 06 18:17:29 2015] [error] [client 66.249.83.172] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Sat Feb 07 12:14:52 2015] [error] [client 66.249.88.150] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Sat Feb 07 16:22:52 2015] [error] [client 2601:6:7600:bd2:f030:677b:baa4:4352] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sat Feb 07 19:07:09 2015] [error] [client 66.249.83.172] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Feb 08 13:36:12 2015] [error] [client 222.186.21.118] request failed: error reading the headers
+[Sun Feb 08 13:38:05 2015] [error] [client 222.186.21.118] request failed: error reading the headers
+[Sun Feb 08 23:01:31 2015] [error] [client 209.92.176.24] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Mon Feb 09 22:55:27 2015] [error] [client 41.203.214.17] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Mon Feb 09 23:41:35 2015] [error] [client 149.129.27.97] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Mon Feb 09 23:59:57 2015] [error] [client 54.175.72.187] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Tue Feb 10 00:00:48 2015] [error] [client 54.175.72.187] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Tue Feb 10 19:24:11 2015] [error] [client 2601:6:7600:bd2:5c66:ae13:7ebf:9c5c] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Wed Feb 11 07:13:56 2015] [error] [client 167.56.10.23] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Thu Feb 12 11:00:17 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Thu Feb 12 19:23:36 2015] [error] [client 66.249.88.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 13 11:45:16 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 13 12:35:45 2015] [error] [client 129.10.9.85] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 13 12:35:45 2015] [error] [client 129.10.9.85] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 13 16:19:55 2015] [error] [client 65.204.49.74] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 13 19:04:53 2015] [error] [client 66.249.83.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 13 19:11:23 2015] [error] [client 198.0.151.42] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /
+[Sat Feb 14 06:19:38 2015] [error] [client 202.183.165.42] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sat Feb 14 06:22:00 2015] [error] [client 202.183.165.42] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sat Feb 14 06:23:16 2015] [error] [client 202.183.165.42] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Sun Feb 15 06:45:38 2015] [error] [client 72.128.101.69] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /
+[Wed Feb 18 13:10:38 2015] [error] [client 149.129.140.232] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Wed Feb 18 17:44:05 2015] [error] [client 2601:6:7600:bd2:8c01:67ff:a20c:6017] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Wed Feb 18 20:38:45 2015] [error] [client 66.249.83.173] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico

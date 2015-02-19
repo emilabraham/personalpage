@@ -9,6 +9,6 @@ My personal webpage built using Django.
 * Secrets
 
 ## Tools used
-I used django version 1.6.5. Along with south as my database migration
-application. For my rich HTML text editor I used CKEditor with a ACE code
-plugin.
+* Django 1.6.5
+* [South DB migration tool](https://south.readthedocs.org/en/latest/)
+* CKEditor with ACE code plugin
