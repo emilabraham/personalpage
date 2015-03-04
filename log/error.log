@@ -3303,3 +3303,26 @@
 [Wed Feb 18 13:10:38 2015] [error] [client 149.129.140.232] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
 [Wed Feb 18 17:44:05 2015] [error] [client 2601:6:7600:bd2:8c01:67ff:a20c:6017] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Wed Feb 18 20:38:45 2015] [error] [client 66.249.83.173] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Thu Feb 19 21:01:05 2015] [error] [client 222.167.189.81] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Fri Feb 20 05:11:43 2015] [error] [client 216.115.153.201] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Fri Feb 20 20:00:03 2015] [error] [client 66.249.83.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sat Feb 21 11:41:45 2015] [error] [client 75.148.17.90] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Sat Feb 21 13:19:50 2015] [error] [client 66.249.88.166] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Mon Feb 23 14:04:25 2015] [error] [client 186.64.157.13] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Tue Feb 24 05:47:03 2015] [error] [client 182.72.55.194] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Tue Feb 24 10:39:24 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Wed Feb 25 13:34:13 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Fri Feb 27 05:33:28 2015] [error] [client 23.124.85.251] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Fri Feb 27 09:22:26 2015] [error] [client 67.107.11.237] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Fri Feb 27 14:22:50 2015] [error] [client 148.0.77.118] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Sun Mar 01 02:21:39 2015] [error] [client 119.247.168.150] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Mon Mar 02 09:55:46 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Mon Mar 02 19:43:36 2015] [error] [client 2601:6:7600:bd2:20e1:1250:7779:966d] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Mon Mar 02 19:43:36 2015] [error] [client 2601:6:7600:bd2:20e1:1250:7779:966d] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Tue Mar 03 11:24:11 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Tue Mar 03 11:24:28 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Tue Mar 03 11:24:28 2015] [error] [client 50.203.225.98] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Tue Mar 03 18:24:45 2015] [error] [client 2601:6:7600:bd2:20e1:1250:7779:966d] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Tue Mar 03 18:24:45 2015] [error] [client 2601:6:7600:bd2:20e1:1250:7779:966d] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
+[Wed Mar 04 00:51:30 2015] [error] [client 65.15.105.62] client sent HTTP/1.1 request without hostname (see RFC2616 section 14.23): /tmUnblock.cgi
+[Wed Mar 04 17:31:01 2015] [error] [client 2601:6:7600:bd2:8c41:80b8:8852:9088] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
