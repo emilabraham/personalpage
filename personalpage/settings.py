@@ -26,7 +26,6 @@ TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = [
     '.emilabraham.com',
-    '.emilabraham.com.',
     ]
 
 
@@ -101,3 +100,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "public_html/static")
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL='/media/'
+
+# Email
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER='emilabraham1414@gmail.com'
+EMAIL_HOST_PASSWORD='appu1414'
+MAIL_USE_TLS=True

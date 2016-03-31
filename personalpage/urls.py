@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', 'personalpage.views.home', name='home'),
-    url(r'^blog/', include('blog.urls', namespace='blog')),
+    url(r'^thoughts/', include('blog.urls', namespace='blog')),
     url(r'^booklist/', include('booklist.urls', namespace='booklist')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^about/', TemplateView.as_view(template_name="about.html")),
