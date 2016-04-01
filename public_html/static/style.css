@@ -37,42 +37,47 @@ a:visited
   color: magenta;
 }
 
+.recipe a:hover
+{
+  color: yellow;
+}
+
 .gallery a:hover 
 { 
   color: orange;
 }
 
-#bloglinks ul 
+#listlinks ul 
 { 
   list-style-type: none;
 }
 
-#bloglinks li a:link 
+#listlinks li a:link 
 { 
   text-decoration: none;
   color: green;
   font-size: 20;
 }
 
-#bloglinks li a:visited 
+#listlinks li a:visited 
 { 
   text-decoration: none;
   color: green !important;
 }
 
-#bloglinks li a:hover 
+#listlinks li a:hover 
 { 
   text-decoration: none;
   color: blue !important;
 }
 
-#bloglinks li a:active 
+#listlinks li a:active 
 { 
   text-decoration: none;
   color: orange !important;
 }
 
-#blogtitle 
+#listtitle 
 { 
   font-size: 25;
   border: 0;

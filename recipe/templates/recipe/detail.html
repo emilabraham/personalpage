@@ -1,0 +1,9 @@
+{% extends "home.html" %}
+
+{% block title %} {{ selected_recipe.title }} {% endblock %}
+
+{% block content %}
+<h2 id="listtitle">{{ selected_recipe.title }}</h2>
+
+{{ selected_recipe.body|safe }}
+{% endblock %}

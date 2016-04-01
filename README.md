@@ -6,6 +6,7 @@ My personal webpage built using Django.
 * Booklist
 * Blog
 * Admin console
+* Recipes
 * Secrets
 
 ## Tools used
