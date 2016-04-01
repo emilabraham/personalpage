@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+
+{% block title %}emilabraham.com:Recipes{% endblock %}
+
+{% block content %}
+{% if all_recipes %}
+  <div id="listlinks">
+  <ul>
+  {% for recipe in all_recipes %}
+  <li><a href="{% url 'recipe:detail' recipe.slug %}">{{ recipe.title }}</a>
+  </li>
+  {% endfor %}
+  </ul>
+  </div>
+{% else %}
+  <p>No recipes available</p>
+{% endif %}
+{% endblock %}

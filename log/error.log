@@ -3847,3 +3847,6 @@
 [Mon Mar 28 09:37:02 2016] [error] [client 66.249.64.104] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico
 [Mon Mar 28 10:15:08 2016] [error] [client 222.141.64.65] Invalid URI in request GET HTTP/1.1 HTTP/1.1
 [Mon Mar 28 14:08:54 2016] [error] [client 66.249.83.220] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico, referer: http://emilabraham.com/thoughts/
+[Thu Mar 31 12:14:28 2016] [error] [client 103.26.14.7] Invalid URI in request GET HTTP/1.1 HTTP/1.1
+[Thu Mar 31 19:24:00 2016] [error] [client 129.10.18.38] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico, referer: http://emilabraham.com/admin/
+[Thu Mar 31 20:42:05 2016] [error] [client 66.249.83.149] File does not exist: /home/honestemu/public/emilabraham.com/personalpage/public_html/favicon.ico, referer: http://emilabraham.com/

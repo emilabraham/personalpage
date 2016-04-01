@@ -4,7 +4,7 @@
 
 {% block content %}
 {% if all_posts %}
-  <div id="bloglinks">
+  <div id="listlinks">
   <ul>
   {% for post in all_posts %}
   <li><a href="{% url 'blog:detail' post.slug %}">{{ post.title }}</a>

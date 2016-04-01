@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'south',
     'booklist',
     'blog',
+    'recipe',
     'suit_ckeditor',
     )
 
