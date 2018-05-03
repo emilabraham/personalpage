@@ -14,7 +14,6 @@ urlpatterns = patterns('',
 
     url(r'^$', 'personalpage.views.home', name='home'),
     url(r'^thoughts/', include('blog.urls', namespace='blog')),
-    url(r'^booklist/', include('booklist.urls', namespace='booklist')),
     url(r'^recipes/', include('recipe.urls', namespace='recipe')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^about/', TemplateView.as_view(template_name="about.html")),
