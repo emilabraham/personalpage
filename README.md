@@ -3,11 +3,9 @@
 My personal webpage built using Django.
 
 ## Features
-* Booklist
 * Blog
 * Admin console
 * Recipes
-* Secrets
 
 ## Tools used
 * Django 1.6.5
