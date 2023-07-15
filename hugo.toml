@@ -1,0 +1,4 @@
+baseURL = 'https://emilabraham.com/'
+languageCode = 'en-us'
+title = "Emil's personal site"
+theme = 'emil'
