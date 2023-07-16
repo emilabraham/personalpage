@@ -1,1 +1,4 @@
-<p class="footer text-center">Copyright (c) {{ now.Format "2006"}} Emil Abraham</p>
+{{ with .Site.Data.siteVariables.GitHub }}
+<hr>
+<a href="{{ . }}">GitHub</a>
+{{ end }}
