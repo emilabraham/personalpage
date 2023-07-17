@@ -1,3 +1,2 @@
-{{ $dateTime := .PublishDate.Format "2006-01-02" }}
-{{ $dateFormat := .Site.Params.dateFormat | default "January 3, 2006" }}
-<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+{{ $dateTime := .PublishDate | time.Format ":date_long" }}
+<time datetime="{{ $dateTime }}">{{ $dateTime }}</time>

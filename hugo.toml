@@ -1,6 +1,6 @@
 baseURL = 'https://emilabraham.com/'
 languageCode = 'en-us'
-title = "Emil's personal site"
+title = "Emil's webpage"
 theme = 'emil'
 [menu]
 [[menu.main]]
