@@ -1,5 +1,5 @@
 ---
-title: "My First Post"
+title: "New Blog New Post"
 date: 2023-07-15T17:08:21-07:00
 ---
 
@@ -7,6 +7,8 @@ This is my first blog post using [Hugo](https://gohugo.io/).
 Hugo is a static site generator.
 It is using markdown to make each blog post instead of an entire backend.
 That should keep it relatively lightweight and simple.
+
+I've tried to preserve most of my posts from the original Django blog.
 
 The following are some tests to explore.
 
