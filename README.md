@@ -14,7 +14,7 @@ Start development server:
 hugo server
 ```
 
-build static files to `public/`
+Build static files to `public/`
 
 ```shell
 hugo
