@@ -1,5 +1,10 @@
 # Hugo Personal Webpage
 
+## TODO
+
+- [ ] deploy procedure (github actions?)
+- [ ] separate theme
+
 ## Features
 
 * Blog
