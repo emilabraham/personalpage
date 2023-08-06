@@ -3,10 +3,9 @@ title: "New Blog New Post"
 date: 2023-07-15T17:08:21-07:00
 ---
 
-This is my first blog post using [Hugo](https://gohugo.io/).
-Hugo is a static site generator.
-It is using markdown to make each blog post instead of an entire backend.
-That should keep it relatively lightweight and simple.
+This is my first blog post using [Hugo](https://gohugo.io/). Hugo is a static
+site generator. It is using markdown to make each blog post instead of an
+entire backend. That should keep it relatively lightweight and simple.
 
 I've tried to preserve most of my posts from the original Django blog.
 
@@ -20,6 +19,4 @@ I created a shortcode to render an image resized
 
 Here is some `inline code`
 
-```
-Here is a code block
-```
+``` Here is a code block ```
