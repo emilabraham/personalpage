@@ -1,6 +1,6 @@
 ---
-title: "Mount Greylock Hike"
-date: 2023-08-05T20:42:18-07:00
+title: "Hike 10/19/2019: Mount Greylock"
+date: 2019-10-27T20:42:18-07:00
 ---
 
 This was my second overnight hike ever. I went with the same crew: Adam and
