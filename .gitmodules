@@ -1,0 +1,3 @@
+[submodule "themes/emil"]
+	path = themes/emil
+	url = https://github.com/emilabraham/emil.git
