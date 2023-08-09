@@ -3,13 +3,13 @@
 ## TODO
 
 - [ ] deploy procedure (github actions?)
-- [ ] separate theme
+- [ ] add shortcode to theme
 
 ## Features
 
 * Blog
 * Recipes
-* Contact Information
+* Some Contact Information
 
 ## Development
 
