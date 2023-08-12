@@ -3,7 +3,6 @@
 ## TODO
 
 - [ ] deploy procedure (github actions?)
-- [ ] add shortcode to theme
 
 ## Features
 
