@@ -17,6 +17,7 @@ jobs:
         ls
         echo "Hello World"
         ls
+        pwd
       shell: bash
       env:
         SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
