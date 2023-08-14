@@ -14,5 +14,5 @@ jobs:
         username: ${{secrets.USERNAME}}
         key: ${{secrets.SSH_PRIVATE_KEY}}
         script: |
-          pwd
-          ls
+          cd ~/public/emilabraham.com/personalpage
+          git pull
