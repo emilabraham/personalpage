@@ -15,4 +15,4 @@ jobs:
         key: ${{secrets.SSH_PRIVATE_KEY}}
         script: |
           cd ~/public/emilabraham.com/personalpage
-          git pull
+          git remote -v
