@@ -15,6 +15,7 @@ jobs:
         echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
         ssh -i $SSH_KEY_PATH ${{secrets.USERNAME}}@${{secrets.HOST_IP}}
         ls
+        echo "Hello World"
       shell: bash
       env:
         SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
