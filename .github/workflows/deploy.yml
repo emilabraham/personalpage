@@ -4,15 +4,29 @@ on:
     branches:
     - 'master'
 jobs:
-  ssh-pull-hugo:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy via SSH
-      uses: appleboy/ssh-action@master
+    - name: Checkout
+      uses: actions/checkout@v3
       with:
-        host: ${{secrets.HOST_IP}}
-        username: ${{secrets.USERNAME}}
-        key: ${{secrets.SSH_PRIVATE_KEY}}
-        script: |
-          cd ~/public/emilabraham.com/personalpage
-          git remote -v
+        submodules: true # Fetch Hugo themes
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.117.0'
+        extended: true
+
+    - name: Build
+      run: hugo
+
+    - name: Deploy
+      uses: up9cloud/action-rsync@master
+      env:
+        HOST: ${{secrets.HOST_IP}}
+        KEY: ${{secrets.SSH_PRIVATE_KEY}}
+        TARGET: ~/public/emilabraham.com/personalpage/public
+        VERBOSE: true
+        USER: ${{secrets.USERNAME}}
+        SOURCE: ./public/
