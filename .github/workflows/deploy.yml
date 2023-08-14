@@ -16,6 +16,7 @@ jobs:
         ssh -i $SSH_KEY_PATH ${{secrets.USERNAME}}@${{secrets.HOST_IP}}
         ls
         echo "Hello World"
+        ls
       shell: bash
       env:
         SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
