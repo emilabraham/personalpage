@@ -2,7 +2,8 @@
 
 ## TODO
 
-- [ ] deploy procedure (github actions?)
+- [ ] Link RSS feed
+- [ ] Add Recipe section
 
 ## Features
 
