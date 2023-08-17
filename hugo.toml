@@ -11,3 +11,7 @@ theme = 'emil'
   name = 'Thoughts'
   pageRef = '/thoughts'
   weight = 20
+[[menu.main]]
+  name = 'Recipes'
+  pageRef = '/recipes'
+  weight = 30
