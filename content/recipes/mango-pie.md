@@ -1,5 +1,6 @@
 ---
 title: "Mango Pie"
+type: recipes
 ---
 
 ## Ingredients
