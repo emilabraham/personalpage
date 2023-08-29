@@ -1,14 +1,9 @@
 # Hugo Personal Webpage
 
-## TODO
-
-- [ ] Add Recipe section
-
 ## Features
 
 * Blog
 * Recipes
-* Some Contact Information
 
 ## Development
 
