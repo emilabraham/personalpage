@@ -7,6 +7,12 @@
 
 ## Development
 
+Import/update theme
+
+```shell
+git submodule update --init --recursive
+```
+
 Start development server:
 
 ```shell
