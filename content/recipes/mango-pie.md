@@ -6,10 +6,10 @@ type: recipes
 
 ## Ingredients
 
-- 2 store bought graham cracker crusts
-- Mango pulp (Big can found in Indian grocery store)
-- 8oz Cream cheese
-- 2 boxes orange jello powder
+- 2 store bought 9" graham cracker crusts
+- 28 oz can mango pulp
+- 8 oz Cream cheese
+- 6 oz orange flavor jello powder
 - 14 oz small can condensed milk
 - cardamom powder (optional)
 
