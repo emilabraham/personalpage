@@ -1,6 +1,6 @@
 ---
 title: "Dog"
-date: 2015-01-07T17:52:36-07:00
+publishDate: 2015-01-07T17:52:36-07:00
 ---
 
 When seeking a role model, One might want to look at Dog.

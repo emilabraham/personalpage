@@ -1,6 +1,6 @@
 ---
 title: "North Dakota Dig"
-date: 2018-07-11T20:19:51-07:00
+publishDate: 2018-07-11T20:19:51-07:00
 ---
 
 I landed in the Bismarck airport and the first thing I am greeted by is a
