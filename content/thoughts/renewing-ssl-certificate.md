@@ -1,6 +1,6 @@
 ---
 title: "Renewing SSL Certificate"
-date: 2017-04-29T18:59:30-07:00
+publishDate: 2017-04-29T18:59:30-07:00
 ---
 
 The day has finally come. My SSL certificate with

@@ -1,6 +1,6 @@
 ---
 title: "Hike 11/11/2017: Rattle River Trailhead to Gentian Pond"
-date: 2018-02-10T19:32:32-07:00
+publishDate: 2018-02-10T19:32:32-07:00
 ---
 
 When we first went into this hike, we were not even sure if anyone hiked in New

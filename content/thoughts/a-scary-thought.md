@@ -1,6 +1,6 @@
 ---
 title: "A Scary Thought"
-date: 2015-01-13T17:45:49-07:00
+publishDate: 2015-01-13T17:45:49-07:00
 ---
 
 What if, all of a sudden, we all forgot how to communicate with each other? We

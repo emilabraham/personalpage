@@ -1,6 +1,6 @@
 ---
 title: "Creating a Mail Server and Enabling SSL"
-date: 2016-05-09T18:17:46-07:00
+publishDate: 2016-05-09T18:17:46-07:00
 ---
 
 This weekend, I finally finished creating my mail server. I have always been

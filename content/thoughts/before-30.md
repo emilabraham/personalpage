@@ -1,6 +1,6 @@
 ---
 title: "Things to Do Before I Turn 30"
-date: 2015-01-10T17:38:19-07:00
+publishDate: 2015-01-10T17:38:19-07:00
 ---
 
 This is an extremely ambitious list for me. If I can complete even 20% of this,
