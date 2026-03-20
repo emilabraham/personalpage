@@ -68,7 +68,7 @@ And finally, we setup a DNS record and pointed it to the server and secured it w
 This was a really fun experience that I feel like I was only able to accomplish in a reasonable amount of time with AI assistance.
 The idea of troubleshooting printer drivers on a Linux machine sounds arduous and boring with little payoff.
 But Claude made it a relatively painless process.
-Setting up a simple web server and basic frontend is realtively easy.
-However, knowing myself, I'd probably spend most of my time evaluating tradeoffs between tools or fighting configurations just to get things working.
+Setting up a simple web server and basic frontend is relatively easy.
+However, knowing myself, I'd probably spend most of my time evaluating trade offs between tools or fighting configurations just to get things working.
 Claude took the friction away and turned this from a multi-weekend project into a single evening project.
 I feel like AI assistants are great at filling this niche.
